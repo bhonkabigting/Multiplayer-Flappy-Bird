@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+button {
+    display: block;
+    position: absolute;
+    top: 280px;
+    left: 105px;
+    width: 80px;
+    height: 43px;
+    margin: auto;
+    background-image: url("/sprites/play.png");
+    background-size: cover;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+    z-index: 9;
+}
+
+button:active {
+    transform: translate(1px);
+    box-shadow: 0px 1px black;
+}
+
+#color {
+    margin: 20px auto 0;
+    width: 50px;
+    height: 40px;
+    background-image: url("/sprites/bluebird-midflap.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#container {
+    position: relative;
+    margin: auto;
+    height: 512px;
+    width: 288px;
+    background-image: url('/sprites/background-night.png');
+    overflow: hidden;
+}
+
+#base {
+    position: absolute;
+    bottom: 0;
+    height: 112px;
+    width: 288px;
+    background-image: url('/sprites/base.png');
+    background-position: 0 0;
+    background-repeat: repeat-x, repeat-x;
+    z-index: 1;
+}
+
+#gameover {
+    display: none;
+    position: absolute;
+    width: 192px;
+    height: 42px;
+    background-image: url('/sprites/gameover.png');
+    background-repeat: no-repeat;
+    top: 200px;
+    left: 50px;
+    z-index: 99;
+}
+
+#winner {
+    display: none;
+    position: absolute;
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    background-color: rgb(251, 170, 94, 0.5);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: black;
+    -webkit-text-stroke: 0.5px white;
+    z-index: 99;
+}
